@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de dados</title>
+</head>
+<body> 
+    <h1>Tratamento de dados</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ratione ea aspernatur praesentium quos consectetur, dolores illo, illum nam tempora nostrum? Consequuntur, provident velit non corrupti praesentium eos sunt error.</p>
+
+    <script>
+       // var n1 = window.prompt('Digite um número:')
+       // var n2 = window.prompt('Digite outro número:')
+       // var s = n1 + n2
+       // window.alert('A soma dos valores é:' + s)  o resultado não foi a soma e sim, a junção dos numeros digitados. O +  tem a função de adição (number + number) e de concatenação (string + string). O comando window.prompt, retorna uma valor string como resposta, mesmo que eu digite apenas numeros. Temos que fazer uma conversão, forçar que o resultado seja um número. 
+     // String p/ numero, usaremos: Number(n) ou Number.parseInt(n) ou Number.parseFloat(n)
+
+     var n1 = Number.parseInt(window.prompt('Digite um numero:'))
+     var n2 = Number.parseInt(window.prompt('Digite outro numero:'))
+     var s = n1 + n2
+     //window.alert('A soma dos valores é: ' + s) // Pode usar template string : ` ${n} ` entre crases
+      window.alert(`A soma dos valores entre ${n1} e ${n2} é igual a ${s}.`)
+     // Numero p/ string, usaremos: String(n) ou n.toString()
+    </script>
+
+</body>
+</html>
