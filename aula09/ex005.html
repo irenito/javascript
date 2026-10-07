@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background: rgba(12, 2, 147, 0.559);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado.</p>
+    </p>Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
+    <p name="diferença">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum praesentium laborum, illum iusto maiores commodi ipsam assumenda, quae provident nisi ab sequi facere amet asperiores, facilis minus. Enim, obcaecati reprehenderit.</p> 
+    <div id="msg">Clique em mim.</div>
+
+    <script>
+        window.document.write(window.document.charset + '<br>')
+        window.document.write(window.navigator.appName + '<br>')
+        window.document.write(window.document.URL + '<br>')
+
+        var p1= window.document.getElementsByTagName('p')[0]
+        window.document.write(p1.innerText + '<br>') // pega o texto sem a formatação, sem os child.
+        window.document.write('Está escrito assim: ' + p1.innerHTML + '<br>') // pega o texto com a formatação, c os child.
+
+        var d= window.document.getElementById('msg')
+        d.style.background = 'green'
+       // d.innerText = 'Estou aguardando...' 
+        window.document.write('Estou aguardando...' + d.innerText + '<br>')
+
+        var f = window.document.getElementsByName('diferença')[0]
+        f.style.background = 'yellow'
+
+        var e = window.document.querySelector('p') //querySelectorAll , pega todos os elementos que correspondemm ao seletor
+        e.style.background = 'red'
+    </script>
+</body>
+</html>
