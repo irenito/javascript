@@ -13,12 +13,13 @@
 
     <script>
         function resposta(){
-            var pais = window.document.getElementById('txtpais')
+            var pais = window.document.getElementById('txtpais').value.toUpperCase() /*para encontrar um elemento HTML, usamos getElement; para pegar o texto digitado dentro de um campo, usamos .value */
+            //.toUpperCase() transforma todo o texto digitado em maiuscula, pois a forma como a pessoa digitou, interfirá no resultado//
             var resp = window.document.querySelector('div#res')
 
             resp.innerHTML = `<p>Você nasceu no ${pais}.</p>`
 
-            if(pais == 'Brasil'){
+            if (pais == 'Brasil') {
                 resp.innerHTML += `<p>Você é brasileiro.</p>`
             } else{
                 resp.innerHTML += `<p>Você é estrangeiro.</p>`
