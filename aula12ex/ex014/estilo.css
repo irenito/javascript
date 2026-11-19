@@ -19,7 +19,9 @@ div{
     text-align: center;
     padding: 8px;
 }
-
+img#imagem{
+    border-radius: 50%;
+}
 footer{
     color: white;
     text-align: center;
