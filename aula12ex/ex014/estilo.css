@@ -13,14 +13,19 @@ section{
     width: 500px;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.466);
-
+    
 }
 div{
     text-align: center;
     padding: 8px;
 }
+div#foto{
+    display: flex;
+    justify-content: center;
+}
 img#imagem{
     border-radius: 50%;
+    
 }
 footer{
     color: white;
